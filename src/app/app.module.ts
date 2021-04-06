@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './component/encabezado/encabezado.component';
+import { VentasModule } from './ventas/ventas.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { EncabezadoComponent } from './component/encabezado/encabezado.component
     EncabezadoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    VentasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
