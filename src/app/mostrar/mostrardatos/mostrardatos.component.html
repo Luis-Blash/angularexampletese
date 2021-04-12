@@ -1,0 +1,12 @@
+<h1>Nombre: {{nombre}}</h1>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div *ngFor="let i of mis_tarjetas" class="card">
+            <img src="{{i.imagen}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{i.titulo}}</h5>
+                <p class="card-text">{{i.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ROUTING } from './app.routes';
 import { EncabezadoComponent } from './component/encabezado/encabezado.component';
+import { MostrarModule } from './mostrar/mostrar.module';
 import { SecundarioModule } from './secundario/secundario.module';
 import { VentasModule } from './ventas/ventas.module';
 
@@ -16,6 +17,7 @@ import { VentasModule } from './ventas/ventas.module';
     BrowserModule,
     VentasModule,
     SecundarioModule,
+    MostrarModule,
     ROUTING
   ],
   providers: [],
