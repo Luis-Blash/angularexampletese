@@ -6,12 +6,13 @@ import { AyudaComponent } from './ayuda/ayuda.component';
 import { AcercaComponent } from './acerca/acerca.component';
 import { DocumentosComponent } from './documentos/documentos.component';
 import {RouterModule} from '@angular/router';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
 
 
 
 @NgModule({
-  declarations: [CarouselComponent, NavbarComponent, AyudaComponent, AcercaComponent, DocumentosComponent],
-  exports:[CarouselComponent, NavbarComponent, AyudaComponent, AcercaComponent, DocumentosComponent],
+  declarations: [CarouselComponent, NavbarComponent, AyudaComponent, AcercaComponent, DocumentosComponent, TarjetaComponent],
+  exports: [CarouselComponent, NavbarComponent, AyudaComponent, AcercaComponent, DocumentosComponent,TarjetaComponent],
     imports: [
         CommonModule,
         RouterModule

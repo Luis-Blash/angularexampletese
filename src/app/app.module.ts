@@ -6,6 +6,7 @@ import { ROUTING } from './app.routes';
 import { EncabezadoComponent } from './component/encabezado/encabezado.component';
 import { MostrarModule } from './mostrar/mostrar.module';
 import { SecundarioModule } from './secundario/secundario.module';
+import { TarjetasServices } from './services/tarjetas.services';
 import { VentasModule } from './ventas/ventas.module';
 
 @NgModule({
@@ -20,7 +21,7 @@ import { VentasModule } from './ventas/ventas.module';
     MostrarModule,
     ROUTING
   ],
-  providers: [],
+  providers: [TarjetasServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
