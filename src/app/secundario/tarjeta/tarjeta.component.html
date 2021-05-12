@@ -1,11 +1,11 @@
 <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col" *ngFor="let i of recuperatarjetas">
-        <div class="card">
+        <div class="card" >
             <img src="{{i.imagen}}" height="100" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{i.titulo}}</h5>
                 <p class="card-text">{{i.descripcion}}</p>
-              <button class="btn btn-primary" type="submit">
+              <button (click)="recuperarId(i.id)" [routerLink]="['/tarjetadetalle/',i.id]" class="btn btn-primary" type="submit">
                 Mas..
                 <img src="{{i.icono}}" height="10" class="card-img-top" alt=".">
               </button>

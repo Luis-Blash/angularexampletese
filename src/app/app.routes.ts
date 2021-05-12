@@ -4,6 +4,7 @@ import {AyudaComponent} from './secundario/ayuda/ayuda.component';
 import {AcercaComponent} from './secundario/acerca/acerca.component';
 import {DocumentosComponent} from './secundario/documentos/documentos.component';
 import { TarjetaComponent } from './secundario/tarjeta/tarjeta.component';
+import { DetallestarjetaComponent } from './secundario/tarjeta/detallestarjeta/detallestarjeta.component';
 
 // configuracion de las rutas
 const RUTAS: Routes = [
@@ -12,6 +13,7 @@ const RUTAS: Routes = [
   {path: 'acerca', component: AcercaComponent},
   {path: 'documentos', component: DocumentosComponent},
   {path: 'tarjeta', component: TarjetaComponent},
+  {path: 'tarjetadetalle/:id', component: DetallestarjetaComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'carousel'}
 ];
 
