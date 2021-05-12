@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AccesoModule } from './acceso/acceso.module';
 
 import { AppComponent } from './app.component';
 import { ROUTING } from './app.routes';
@@ -19,7 +20,8 @@ import { VentasModule } from './ventas/ventas.module';
     VentasModule,
     SecundarioModule,
     MostrarModule,
-    ROUTING
+    ROUTING,
+    AccesoModule
   ],
   providers: [TarjetasServices],
   bootstrap: [AppComponent]

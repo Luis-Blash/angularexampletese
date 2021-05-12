@@ -14,6 +14,7 @@ const RUTAS: Routes = [
   {path: 'documentos', component: DocumentosComponent},
   {path: 'tarjeta', component: TarjetaComponent},
   {path: 'tarjetadetalle/:id', component: DetallestarjetaComponent},
+  {path: 'acesso', loadChildren: () => import('./acceso/acceso.module').then(m => m.AccesoModule)},
   {path: '**', pathMatch: 'full', redirectTo: 'carousel'}
 ];
 
