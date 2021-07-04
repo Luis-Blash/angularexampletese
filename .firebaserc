@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-5d27b": {
+      "hosting": {
+        "practica1": [
+          "login-5d27b"
+        ]
+      }
+    }
+  }
+}
